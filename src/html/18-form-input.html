@@ -14,16 +14,62 @@
         <legend>폼 서식</legend>
         <div>
           <label for="userName">이름</label>
-          <input type="text" id="userName" />
+          <input
+            type="text"
+            name="UserName"
+            id="userName"
+            required
+            placeholder="예)배동초"
+          />
         </div>
         <div>
           <label for="userPwd">비밀번호</label>
-          <input type="password" id="userPwd" />
+          <input type="password" id="userPwd" required placeholder="" />
         </div>
         <div>
           <label for="likelionSearch">검색</label>
-          <input type="search" id="likelionSearch" />
+          <input type="search" name="likelionSearch" id="likelionSearch" />
         </div>
+        <div>
+          <label for="userEmail">이메일</label>
+          <input type="email" name="userEmail" id="userEmail" required />
+        </div>
+        <div>
+          <label for="userPhone">연락처</label>
+          <input type="tel" name="userPhone" id="userPhone" required />
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            checked
+            value="HTML"
+            name="classLikeLion"
+            id="classHtml"
+          />
+          <label for="classHtml">HTML</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="CSS"
+            name="classLikeLion"
+            id="classCss"
+          />
+          <label for="classCss">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" value="JS" name="classLikeLion" id="classJs" />
+          <label for="classJs">JS</label>
+        </div>
+        <div>
+          <input type="radio" name="classRoom" id="classRoom1" />
+          <label for="classRoom1">회고 1팀</label>
+        </div>
+        <div>
+          <input type="radio" name="classRoom" id="classRoom2" />
+          <label for="classRoom2">회고 2팀</label>
+        </div>
+        <input type="submit" value="전송" />
       </fieldset>
     </form>
   </body>
