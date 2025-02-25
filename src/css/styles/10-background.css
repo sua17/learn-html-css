@@ -1,0 +1,25 @@
+/* 배경 색상, ( )는 함수 */
+body {
+  background-color: hsl(180, 50%, 80%);
+  background-image: url(/src/assets/images/rabbit.png);
+  /* 배경 이미지 반복 여부 */
+  background-repeat: no-repeat;
+  /* 배경 이미지 위치(단축 표기법), 숏핸드 margin 10px 20px 참고 */
+  background-position: 50% 50%;
+  /* background-position-x: 30px
+  background-position-y: 40px */
+  min-height: 100vh;
+  /* vh=view point height */
+  background-attachment: fixed;
+  /* fixed: 토끼가 같이 움직임 scroll: 토끼 고정됨*/
+  background-size: 100px 130px;
+  /* contain 과 cover 필요에 따라 선택 */
+  background:
+    url(/src/assets/images/cloud.png) repeat-x 0 100px fixed,
+    /* 색깔 이미지 반복 여부 위치 */ url(/src/assets/images/sun.png) no-repeat
+      150px 50px /150px 150px fixed,
+    linear-gradient(red, green),
+    pink;
+  /* 구름 해 배경색 -> 배경은 본문의 반대 */
+  /* gradient 또한 배경이다 */
+}
