@@ -1,0 +1,45 @@
+@import url('/src/common/theme.css');
+/* .mom-friend-son{
+  display: none;
+} */
+
+/* float 사용하기 */
+.card {
+  background: var(--pastel-pink);
+  border: 1px solid green;
+
+  .thumbnail {
+    background: var(--pastel-yellow);
+    /* display: flow-root; */
+    /* width: 100%; */
+    /* width float 같이 쓴다 */
+    /* float: left; */
+    border: 1px solid red;
+    /* float 요소의 부모에 직접 높이를 지정해서 일반 흐름을 벗어난 이미지가 다음 콘텐츠 영역 레이아웃에 영향을 주는 것을 피할 수 있음. */
+    /* height: 139px; */
+    /* overflow: auto; */
+    /* hidden, scroll 도 가능하다, 넘치는 영역을 체크한다, BFC 효과, display: flow-root */
+    /* 상자 바깥에 이미지가 나가서 잘리는 경우가 있다 */
+    /* float으로 인해 부모 요소인 thumbnail이 인식하지 못하는 높이를 포함하도록 BFC를 생성 */
+
+    img {
+      /* position: relative; 와  right: -50px 경우엔 이미지 잘린다 */
+      float: left;
+      width: 100px;
+      vertical-align: middle;
+      /* vertical-align: top; 이미지 아래쪽 여백을 없애기 위한 트릭 */
+      /* display: block; 이미지 아래쪽 여백을 없애기 위한 트릭 */
+    }
+  }
+
+  .subject {
+    background: var(--pastel-blue);
+  }
+
+  .content {
+    /* float 효과를 해제하기 위해 clear 속성을 사용할 수 있다 */
+    /* clear 속성은 block 상황을 가지는 요소에만 지정할 수 있다, inline 성향은 지정 안됨 */
+    clear: both;
+    background: var(--pastel-orange);
+  }
+}

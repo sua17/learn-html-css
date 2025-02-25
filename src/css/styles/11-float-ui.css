@@ -1,0 +1,67 @@
+@import '/src/common/modern-reset.css';
+
+body {
+  font-family: SUIT, sans-serif;
+}
+
+.card {
+  /* BFC - overflow:hidden, diplay:flow-root, position: absoulte */
+  /* display: flow-root; */
+  /* display: none 이랑 같다, 그래서 hidden 했던 마크업이 보인다 */
+  /* background-color: pink; */
+  /* font-size: 16px; */
+  margin: 2em; /* 16px * 2 = 32px */
+  padding: 1em; /* 16px * 2 = 32px */
+  border: 1px solid #aaa;
+  border-radius: 0.5rem;
+  /* transition: border-radius 3s; */
+
+  &.good-partner {
+    display: flow-root;
+  }
+
+  /* 제 목 */
+  .subject {
+    /* background: skyblue; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    span {
+      vertical-align: top;
+      &[lang='en'] {
+        font-size: 0.5em;
+        /* background: yellow; */
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+
+  &:hover {
+    border-radius: 50px 0 50px 0;
+  }
+
+  /* 이미지 */
+  .thumbnail {
+    --radius: 50%;
+
+    border: 1px solid #ccc;
+    float: left;
+    margin: 1em;
+    padding: 1em;
+    border-radius: var(--radius);
+    width: 120px;
+    shape-outside: circle(50%);
+
+    img {
+      width: 100px; /* 80px */
+      aspect-ratio: 1/1;
+      border-radius: var(--radius);
+      object-fit: cover;
+      object-position: 0 -20px;
+    }
+  }
+  /* 내 용 */
+  .content {
+    margin-top: 0.625rem;
+  }
+}
