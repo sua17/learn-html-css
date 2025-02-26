@@ -17,8 +17,7 @@
     border: 1px solid red;
     /* float 요소의 부모에 직접 높이를 지정해서 일반 흐름을 벗어난 이미지가 다음 콘텐츠 영역 레이아웃에 영향을 주는 것을 피할 수 있음. */
     /* height: 139px; */
-    /* overflow: auto; */
-    /* hidden, scroll 도 가능하다, 넘치는 영역을 체크한다, BFC 효과, display: flow-root */
+    /* display: flow-root, overflow: auto;, hidden, scroll 도 가능하다, 넘치는 영역을 체크한다=BFC 효과,  */
     /* 상자 바깥에 이미지가 나가서 잘리는 경우가 있다 */
     /* float으로 인해 부모 요소인 thumbnail이 인식하지 못하는 높이를 포함하도록 BFC를 생성 */
 
