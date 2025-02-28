@@ -1,0 +1,25 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+
+body {
+  margin-block-end: 1200px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  padding: 1rem;
+  background: #fff;
+}
+
+.container {
+  inline-size: clamp(20rem, 50%, 40rem);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  
+  .team {
+    border-radius: 8px;
+  }
+}
