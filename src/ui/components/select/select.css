@@ -1,0 +1,25 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+/* Select UI */
+h1 {
+  padding: 70px 0 45px;
+
+  @media (min-width: 48rem) {
+    padding: 100px 0 50px;
+  }
+
+.language-bar {
+  padding: 0 var(--spacing-4);
+
+  @media (min-width: 640px) {
+    columns: 2;
+  }
+
+  @media (min-width: 768px) {
+    columns: 3;
+  }
+}
+}
